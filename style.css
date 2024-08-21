@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #2ecc71; /* Attractive background color */
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.game-title {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: pink; /* Cell color matching the body background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.cell:hover {
+    background-color:rgb(227, 133, 149); /* Darker color on hover */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color:rgb(7, 102, 97);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.popup button {
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color:rgb(227, 133, 149);
+    border: none;
+    color: white;
+    font-size:1rem;
+    border-radius: 5px;
+}
+
+.popup button:hover {
+    background-color:pink;
+}
+body{
+    /* background:linear-gradient(to right,rgb(7, 102, 97),rgb(228, 170, 180)); */
+    background-color: rgb(7, 102, 97);
+    color: white;
+    display: flex;
+    flex-direction:column;
+}
+.cell{
+    border-radius: 10%;
+    font-size: 2rem;
+    color:black;
+    font-size: bolder;
+}
